@@ -105,20 +105,17 @@ $conexao->close();
             ?>
             
             <h3 class="text-center mb-3" style="color:#217c81;">Usuários Cadastrados</h3>
-            <div class="container">
-                    <form action="listarUsuarios?pagina=0" method="POST">
-                    <div class="row justify-content-center">
-
-
+                <div class="container">
+                    <form action="listarUsuarios?pagina=0" method="POST">  
                     <div class="row mx-auto text-center w-100 justify-content-center">    
                             <div style="width:75%; margin:0; text-align:center;">
                                 <input type="text" value="<?=$txtPesquisa?>" class="form-control shadow-none" name="campoPesquisar" id="campoPesquisar" placeholder="Nome ou o E-mail do usuário">
                             </div>
                             <div  style="width:5%; margin:0;">
-                                <button name="botaoPesquisar" id="botaoPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button name="botaoPesquisar" id="botaoPesquisar"><i class="fa-solid fa-magnifying-glass"></i><p>Pesquisar</p></button>
                             </div>  
                         </div>
-                    </div>
+                    
                     </form>
                 </div>        
 

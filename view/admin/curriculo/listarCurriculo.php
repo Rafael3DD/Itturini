@@ -73,16 +73,16 @@ $conexao->close();
             ?>
 
 
-            <div class="container justify-content-center">
+            <div class="container mt-4">
                 <form action="listarCurriculo?pagina=0" method="POST">
                     <div class="row mx-auto text-center w-100 justify-content-center">
-
-                        <div class="" style="width:75%; margin:0; text-align:center;">
+                        <div style="width:75%; margin:0; text-align:center;">
                             <input type="text" value="<?= $txtPesquisa ?>" class="form-control shadow-none" name="campoPesquisar" id="campoPesquisar" placeholder="Digite o nome">
                         </div>
-
-                        <div class="" style="width:5%; margin:0;">
-                            <button name="botaoPesquisar" id="botaoPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div style="width:5%; margin:0;">
+                            <button name="botaoPesquisar" id="botaoPesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+                                <p>Pesquisar</p>
+                            </button>
                         </div>
 
                     </div>
@@ -113,7 +113,7 @@ $conexao->close();
                                     <td> <?php echo $curriculo['contato'] ?></td>
 
                                     <td>
-                                        <star-rater  data-id='<?php echo $curriculo['codigo'];?>'  data-rating='<?php echo $curriculo['avaliacao']?>'></star-rater>  
+                                        <star-rater data-id='<?php echo $curriculo['codigo']; ?>' data-rating='<?php echo $curriculo['avaliacao'] ?>'></star-rater>
                                     </td>
 
                                     <td><a href="/visualizarCurrilo?codigo=<?php echo $curriculo['codigo']; ?>"><i class="fa-solid fa-eye"></i></a></td>
@@ -202,14 +202,14 @@ require __DIR__ . '../../../layouts/Footer.php';
 
 <script src="/public/js/StarRater.js"></script>
 <script>
-   function PassaValores(avaliacao, id){
+    function PassaValores(avaliacao, id) {
         //console.log('id '+id);
         //console.log('avaliacao '+avaliacao);
-        
+
         const el = document.querySelector("#estrela_avaliacao");
         const dataId = el.getAttribute("data-rating");
         console.log(dataId); // 123456
-   }
+    }
     //esconde a mensagem
     $().ready(function() {
         setTimeout(function() {
