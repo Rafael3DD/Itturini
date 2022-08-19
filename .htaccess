@@ -1,0 +1,49 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^/?$					index.php [NC,L]
+	RewriteRule ^home/?$	              	 		index.php [NC,L]
+
+	RewriteRule ^cadastrar/?$						view/rotas/cadastrar.php [NC,L]
+	RewriteRule ^cadastrar_db/?$       				view/rotas/cadastrar_db.php [NC,L]
+	RewriteRule ^login/?$ 							view/rotas/login.php [NC,L]
+	RewriteRule ^sair/?$       						view/rotas/sair.php [NC,L]
+	
+	RewriteRule ^verificaLogin/?$					view/temas/verificaLogin.php [NC,L]
+	RewriteRule ^temas/?$							view/temas/temas.php [NC,L]
+	RewriteRule ^temaEscolhido/?$					view/temas/temaEscolhido.php [NC,L]
+
+	
+	RewriteRule ^admin/?$							view/admin/index.php [NC,L]
+	RewriteRule ^curriculo/?$						view/curriculo/curriculo.php [NC,L]
+	RewriteRule ^curriculodb/?$						view/curriculo/curriculodb.php [NC,L]
+
+	RewriteRule ^painelCurriculo/?$       			view/admin/curriculo/painelCurriculo.php [NC,L]
+	RewriteRule ^listarCurriculo/?$       			view/admin/curriculo/listarCurriculo.php [NC,L]
+	RewriteRule ^visualizarCurrilo/?$       		view/admin/curriculo/visualizarCurrilo.php [NC,L]
+	RewriteRule ^apagarCurriculo/?$       			view/admin/curriculo/apagarCurriculo.php [NC,L]
+	RewriteRule ^avaliacao/?$       				view/admin/curriculo/avaliacao.php [NC,L]
+	
+	RewriteRule ^nivelAcesso/?$       				view/admin/usuarios/nivelAcesso.php [NC,L]
+
+	RewriteRule ^painelUsuarios/?$       			view/admin/usuarios/painelUsuarios.php [NC,L]
+	RewriteRule ^listarUsuarios/?$       			view/admin/usuarios/listarUsuarios.php [NC,L]
+	RewriteRule ^buscaAvancada/?$       			view/admin/curriculo/buscaAvancada.php [NC,L]
+
+	RewriteRule ^cadastrarUsuario/?$       			view/admin/usuarios/cadastrarUsuario.php [NC,L]
+	RewriteRule ^cadastrarUsuariodb/?$       		view/admin/usuarios/cadastrarUsuariodb.php [NC,L]
+	
+	RewriteRule ^editarUsuario/?$       			view/admin/usuarios/editarUsuario.php [NC,L]
+	RewriteRule ^apagarUsuario/?$       			view/admin/usuarios/apagarUsuario.php [NC,L]
+	
+
+</IfModule>

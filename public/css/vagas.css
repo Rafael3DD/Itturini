@@ -1,0 +1,332 @@
+.card{
+    margin-bottom: 20px;
+    transition: all ease 0.2s;
+    height: 420px; 
+    padding: 0;
+}
+
+#card-config{
+    padding: 10px;
+}
+
+#btn-vermais{
+    position: absolute;
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30%;
+    right: 30%;
+    text-align: center;
+}
+
+.card-img-top{
+    width:100%;
+    height: 180px;
+}
+
+
+.card:hover{
+   transform:scale(1.05);
+}
+
+.card .btn{
+    background-color: #29a81b;
+    border: 2px solid #29a81b;
+    transition: all ease 0.3s;
+    padding: 10px 20px;
+    font-weight: bold;
+    
+}
+
+.card .btn:hover{
+    background-color: rgb(240, 236, 236);
+    border-color: #29a81b;
+    color:  rgb(12, 187, 129);
+}
+
+
+/*Painel vagas*/
+#btnCadastrar, #listarVaga{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 50px 100px;
+    color: #FFF;
+    background-color: #217c81;
+    border: 1px solid #217c81;
+    transition: all ease 0.3s;
+    font-size: 20px;
+}
+
+#btnAcao{
+    text-align: center;
+}
+
+#btnCadastrar:hover, #listarVaga:hover{
+    transform: scale(1.1);
+   background-color: #2b6568;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.card-title{
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+
+.card-text{
+    font-size: 14px;
+    text-align: justify;
+    margin-left:0;
+    margin-right:0;
+    text-transform: capitalize;
+}
+#nomeusuario{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+}
+#nomeusuario strong{
+    font-size: 18px;
+    
+}
+
+#cadastrovaga #titulo,#cadastrovaga #requisitos{
+    font-size: 15px;
+    height: 30px;
+    
+}
+
+
+
+#requisitos{
+    width: 80%;
+}
+
+#btn-adiciona{
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 5px;
+    transition: all ease 0.3s;
+}
+#btn-adiciona:hover{
+    border-color: #217c81;
+    background-color: #217c81;
+}
+
+/*filtro*/
+#filtro{
+    padding: 20px;
+}
+
+#filtro input, #filtro select{
+    padding: 3px;
+    height: 30px;
+}
+
+
+
+/*Pesquisar*/
+#campoPesquisar{
+    padding:15px;
+    height: 0;
+    margin-bottom:10px;
+    border-radius: 5px;
+    border: 1 solid #217c81;
+    transition: all ease 0.2s;
+}
+
+#campoPesquisar:focus, #idade:focus{
+    border-color:#29a81b;
+}
+td i{
+    transition: all ease 0.2s;
+}
+td i:hover{
+transform: scale(1.1);
+}
+td .fa-trash-can{
+    color: red;
+    
+}
+
+td .fa-eye{
+    color: #1B9127;
+}
+
+td .fa-eye:hover{
+    color: #217c81;
+}
+#botaoPesquisar{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+}
+
+#botaoPesquisar i{
+    text-align: center;
+    color: #217c81;
+    font-size: 20px;
+    margin-left: 10px;
+    transform: scale(1);
+    transition: all ease 0.3s;
+}
+
+#botaoPesquisar i:hover{
+    color: #29a81b;
+    transform: scale(1.1);
+}
+
+#inputPesquisa{
+    width: 220px;
+    font-size: 15px;
+}
+#idade{
+    width: 180px;
+    font-size: 15px;
+    margin-left: 5px;
+    height: 30px;
+}
+#sexo, #filhos, #civil, #cidade, #estado,#vaga, #profissao {
+    margin-left: 5px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all ease 0.2s;
+    width:120px;
+    text-align: center;
+}
+
+#profissao{
+    width: 200px;
+}
+
+/*Ver mais*/
+.verMais{
+    background-color: #F1F1F1;
+}
+
+.verMais .verTitulo , .verMais .verDesc { 
+    color: #217c81;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.verTitulo, .verDesc,.verMais h2, .verMais button{
+    margin-left: 20px;
+}
+.verTitulo span{
+    font-size: 17px;
+    color: #817f7f;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+/*descrição*/
+.verMais .verDesc span{
+    color: #817f7f;
+    font-size: 17px;
+    margin-left: 10px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap:break-word;
+}
+.verMais h2{
+    color: #217c81;
+    font-size: 20px;
+    font-weight: 600;
+}
+.vermaisReq{
+    background-color: #817f7f;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 2px 25px; 
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#btn-cadastro button{
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(12, 187, 129);
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#btn-cadastro button:hover{
+    background-color: rgb(19, 117, 85)
+}
+
+
+
+
+#btn-voltar button{
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(12, 187, 129);
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+#btn-voltar button:hover{
+    background-color: rgb(19, 117, 85);
+}
+
+
+@media(max-width:1075px){
+ 
+    #btnCadastrar,  #listarVaga{
+       width: 300px;
+      
+    }
+    #listarVaga{
+        padding: 30px;
+        margin-left:0 ;
+    }
+  
+    #btnCadastrar{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    
+}
+
+
+@media(max-width:600px){
+    #inputPesquisa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+    #filtro{
+        padding: 20px;
+    }
+    
+    #filtro input, #filtro select{
+        padding: 10px;
+        height: 40px;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,64 @@
+input{
+    padding: 20px !important;
+}
+#formacaoAcademica{
+    width: 95%;
+}
+.main-tit{
+    margin: 30px 0;
+    text-align: center;
+}
+#prev, #next{
+    background-color: #217c81;
+    color: #FFF;
+    font-size: 15px;
+    margin-top: 50px;
+    width: 150px;
+    z-index: 2;
+}
+.step input{
+    font-size: 15px;
+    height: 0;
+    padding: 15px;
+    margin: 0;
+}
+.step select{
+    font-size: 15px;
+    margin: 0;
+}
+
+h5{
+    font-size: 25px;
+}
+h5 span{
+    font-size: 20px;   
+}
+#certificados,h5{
+    text-align: center;
+}
+
+#certificados input{
+    height: 60px;
+    margin: 30px 0px;
+    font-size: 20px;
+}
+
+#enviarForm{
+    position:relative;
+    top: 230%;
+    left:51%;
+    width: 150px;
+    z-index: 1;
+}
+
+#inputcertificados{
+    cursor: pointer;
+}
+
+#cont-apresentacao, #cont-habilidades, #cont-experiencia,#cont-complemento, #cont-atribuicoes{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+}
+

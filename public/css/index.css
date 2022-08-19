@@ -1,0 +1,1137 @@
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+#carousel-mobile{
+    display: none !important;
+}
+
+#particles-js{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1000;
+    transition: all ease 1.2s;
+    height: 100%;
+}
+
+
+/*Icone WhatsApp*/
+#iconeZap {
+    transition: all ease .2s;
+    opacity: 0;
+}
+#iconeZap a{
+    background-color: #FFF;
+    position: absolute; /*Alinhamento vertical*/
+    top: 50%;
+    left: 97%;
+} 
+
+#iconeZap i{
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    color: #25D366;
+    font-size: 35px;
+    float: right;
+    background-color: #FFF;
+    width: 27px;
+    height: 27px;
+    transition: all ease-in-out .5s;
+    
+} 
+
+#iconeZap i:hover{
+    transform: scale(1.2);
+}
+
+/*Slide carousel*/
+#parte1{
+    background-image: url("../img/internet-search-engine-g2303264df_1280.jpg");
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 1.1s;
+    width: 100%;
+}
+#parte2{
+    background-image: url("../img/shopping-g62c57f3e9_1280.jpg");
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 1.1s;
+    width: 100%;
+}
+#parte3{
+    
+    background-image: url("../img/light-bulb-g3dd688a18_1280.jpg");
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 1.1s;
+    width: 100%;
+}
+
+#parte1 h2,#parte2 h2,#parte3 h2 {
+   
+
+    color: #4285F4;
+    font: American Typewriter, serif;
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 90vh;
+}
+
+/*Texto slide*/
+#mainSlider .carousel-caption{
+    top: 35%;
+    bottom: 0;
+ }
+
+
+
+ #mainSlider .carousel-control-prev, #mainSlider .carousel-control-next{ 
+     top: 30%;
+     height: 20%;
+ }
+#mainSlider .carousel-caption{
+   top: 25%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 3vw;
+    font-family: "Poppins", sans-serif;
+    /*position: relative;
+    left: 15%;
+    top: 55%;*/
+    margin: 0 auto;
+}
+
+
+#mainSlider .carousel-item img{
+    background-size: cover;
+    max-width: 100%;
+}
+
+#texto-apresentacao{
+    display: none;
+}
+
+
+/*texto animado*/
+.dinamico{
+    font-family: "Poppins", sans-serif;
+    border-right: 2px solid #65E687;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #FFF;
+    animation: blinkCursor 500ms infinite normal, 
+    typing 1.5s steps(40) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Z003;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000;
+    margin: 0 auto;
+    
+   /* 
+    top: 50%;*/
+    /*
+    animation-play-state: paused;
+    animation-play-state: running;*/
+}
+
+/*animação texto*/
+@keyframes typing{
+    
+    from{
+        width: 0;    
+    }
+    to{
+        width: 6.3em;
+    }
+}
+
+
+/*Cursor piscando*/
+@keyframes blinkCursor{
+   from{
+    border-right-color: #FFF;
+   }
+   to{
+    border-right-color: transparent;
+   }
+}
+
+
+/*Animação TopDown*/
+[data-anima]{
+    opacity: 0;
+    transition: 0.1s;
+}
+
+[data-anima = "topDown"]{
+    transform: translate3d(0,50px,0); /*desloca 50px pra baixo*/
+}
+
+[data-anima].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/*Botao carousel*/
+.carousel-caption a {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgb(78, 203, 248);
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/*Sobre a empresa*/
+.container img{
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.container h3{
+    text-align:center;
+    margin: 65px 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: #444;
+    font-family: "Playfair Display", serif;
+}
+
+
+
+.container h2{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(68, 63, 63);
+}
+
+.container p{
+    margin-top: 0px;
+    text-align: left;
+    width: 450px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #444;
+}
+
+.about-area-icons h6{
+    font-weight: bold;
+
+}
+.about-area-icons i{
+    color: rgb(15, 19, 20);
+    margin: 15px 0;
+    font-size: 30px;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*texto apresentaçao*/
+#texto-apresentacao h3{
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+#texto-apresentacao .dinamico {
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #218AFA;
+    text-align: center;
+}
+
+#slide-apresentacao .carousel-item{
+    transition: all ease 1.1s;
+}
+
+
+
+
+#contatos-estilo div{
+    text-align: center;
+    font-size: 25px;
+}
+
+.about-area-icons{
+    text-align: center;
+    margin-bottom: 40px;
+    /*background-color: #5b5b5b;*/
+}
+
+.about-area-icons p{
+    color:#444;
+    width: auto;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+
+
+/*Serviços e soluções*/
+#box{
+    margin-top: 20px;
+    background-color: #e7e7e7;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #212733;
+    width: 30%;
+    min-height: 30%;
+    padding: 0;
+    color: #212733;
+}
+
+#box i{
+    margin-top: 20px;
+    font-size: 30px;
+    padding:10px ;
+    border: 1px solid #212733;
+    border-radius: 30px;
+}
+#titulo, #texto{
+    text-align: center;
+    color: #212733;
+    overflow-wrap: break-word;
+    width: 100%;
+    padding: 15px;
+    font:'Asap';
+    font-style: normal;
+}
+
+#titulo{
+    font-size: 30px;
+    padding: 0;
+    padding-top: 15px;
+    font-weight: 600;  
+   margin: 0;
+}
+
+#texto{
+    font-size: 15px;
+}
+
+
+#solucoes-icons h5{
+    font-weight: bold;
+    font-size: 20px;
+    color: #444;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#solucoes-icons p{
+    line-height: 10px;
+    font-size: 13px;
+}
+
+#solucoes-icons .about-area-icons{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px; 
+}
+#solucoes-icons .about-area-icons i{
+    background-color: #eae5dd;
+  
+}
+
+#solucoes-icons .about-area-icons p{
+    line-height: 15px;
+}
+
+
+#posi-esquerda{
+    text-align: start;
+}
+#posi-direita{
+    text-align: end;
+    
+}
+
+/*E-mail*/
+#contato-email h6{
+    text-align: center;
+    color: #444;
+    font-size: 18px;
+}
+
+#contato-email #email{
+    border: 1px solid rgb(54, 173, 216);
+    border-radius: 2px;
+}
+
+#contato-email form{
+    display: flex;
+    justify-content: row;
+    padding: 0 25%;
+    margin-bottom: 20px;
+}
+
+#background-mensagem{
+    
+    background: linear-gradient(rgba(54, 173, 216, 1), rgba(54, 173, 216, 0.1));
+    
+    border: 1px solid #399AD8;
+    border-radius: 30px;
+}
+
+#background-mensagem h3{
+    color: #FFF;
+}
+#contato-email #email-cadastro, .campo-mensagem button{
+    padding: 10px 30px;
+    background-color: rgb(54, 173, 216);
+    border:1px solid rgb(54, 173, 216);
+    border-end-end-radius: 10px;
+    border-start-end-radius: 10px;
+    color: #FFF;
+    font-weight: bold;
+    transition: all ease 0.3s;
+}
+
+#contato-email #email-cadastro:hover, .campo-mensagem button:hover{
+    background-color: #FFF;
+    color: rgb(54, 173, 216);
+    border: 1px solid rgb(54, 173, 216);
+}
+
+/*Contatos*/
+#contatos .about-area-icons i, #contatos-estilo i{
+    color: #218AFA;
+}
+#contatos .about-area-icons span, .redeSociais span{
+ font-size: 18px;
+ font-weight: bold;
+ color: #218AFA;
+}
+
+.redeSociais i{
+    margin-top: 30px;
+
+}
+#contatos .redeSociais a i{
+    color: black;
+}
+.redeSociais a i{
+    padding: 7px 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+    font-size: 12px;
+}
+#contatos .redeSociais a i:hover{
+    background-color: black;
+    color: #FFF;
+}
+
+#contatos #contatos-estilo p{
+    font-size: 20px;
+    width: 100%;
+}
+
+
+/*Campo mensagem*/
+.campo-mensagem{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.campo-mensagem form{
+    width: 60%;
+    text-align: center;
+}
+
+.campo-mensagem input{
+    height: 44px;
+    width: 49%;
+    margin: 2px;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.campo-mensagem input, .campo-mensagem textarea{
+    border-radius: 0%;
+    border: 1px solid rgb(54, 173, 216);
+    transition: all ease 0.2s;
+}
+
+.campo-mensagem input:hover, .campo-mensagem textarea:hover{
+    border-color: #d3d3d3;
+}
+.campo-mensagem textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 150px;
+    max-height: 300px;
+    min-height: 150px;
+}
+.campo-mensagem button{
+    transition: all ease 0.5s;
+    border-radius: 30px;
+    padding: 10px 60px;
+    margin-bottom: 20px;
+}
+
+/*Mapa*/
+iframe{
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Carousel de colunas*/
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carousel-column{
+    background-color: #f1f1f1;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#carousel-column .carousel-item{
+    transition: all ease 1s;
+}
+
+
+#carousel-column .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 60%;
+    margin-right: 10vw;
+}
+   
+#carousel-column   .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 60%;
+    margin-left: 10vw;
+}
+
+#carousel-column .row{
+    padding: 0;
+}
+
+#carousel-column img{
+    width: 25vh;
+    height: 20vh;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#carousel-column .indicadores{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: rgba(39, 155, 223, 0.74);   
+}
+
+#carousel-column .carousel-indicators{
+    margin-bottom: -5px !important;
+}
+
+
+/*carouselmobile*/
+
+#carousel-mobile{
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+#carousel-mobile .carousel-item{
+    transition: all ease 0.5s;
+    
+}
+
+#carousel-mobile  .carousel-control-prev,#carousel-mobile .carousel-control-next-icon{
+    align-items: center;
+}
+
+#carousel-mobile  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    background-size: 60%;
+}
+   
+#carousel-mobile .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    background-size: 60%;
+    height: 100%;
+}
+
+#carousel-mobile img{
+    width: 30vh;
+    height: 28vh;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+
+#carousel-mobile .indicadores{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: rgba(39, 155, 223, 0.74);   
+    padding: 0;
+}
+
+
+
+
+
+
+/*Responsivo*/ 
+/*Tablet*/
+@media(max-width:1024px){
+
+    #carousel-column{
+        padding: 0 20px;
+    
+    }
+  
+
+    #carousel-column .carousel-control-prev-icon {
+        background-size: 50%, 50%;
+        margin-right: 8vw;
+
+    }
+       
+    #carousel-column   .carousel-control-next-icon {
+        background-size: 50%, 50%;
+        margin-left: 8vw;
+    }
+    
+
+    #box{
+        display: none;
+    }
+
+    #posi-esquerda{
+        text-align: center;
+    }
+    #posi-esquerda i{
+        font-size: 30px;
+
+    }
+
+    #posi-direita h5{
+        font-size: 12px;
+    }
+    #posi-direita p, #posi-direita h5{
+        text-align: center;
+    }
+    #posi-direita p{
+        font-size: 12px !important;
+        line-height: 15px !important;
+    }
+
+    .redeSociais a i {     
+        padding: 5px 5px;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+        margin-left: 2px;
+        font-size: 20px;
+    }
+
+    #social-btn{
+        margin-top: 20px;
+    }
+
+    .about-area-icons p{
+        text-align: center;
+    }   
+
+    .campo-mensagem input,.campo-mensagem textarea{
+        height: 40px;
+        width: 100%;
+        margin: 2px;
+        display: inline;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+   
+   
+  
+}
+
+@media(max-width:900px){
+
+    #carousel-mobile .carousel-indicators{
+        margin-bottom: 5vh !important;
+    }
+    
+    #contatos{
+        display: none;
+    }
+    #carousel-mobile img{
+        width: 20vh;
+        height: 20vh;
+       
+    }
+    #texto-apresentacao h3{
+        font-size: 20px;
+    }
+    #carousel-mobile{
+        display: block !important;
+    }
+    #contatos-estilo div{
+        margin-bottom: 10px;
+    }
+    
+    #carousel-column{
+        height: 30vh;
+        display: none; /*Esconde carousel*/
+    }
+
+    #social-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #social-btn a{
+        margin-right: 0;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    
+    .redeSociais a i {
+       padding:15px 15px !important;
+    }
+
+    #carousel-column .carousel-control-prev-icon {
+        background-size: 80%, 80%;
+        margin-right: 10vw;
+
+    }
+       
+    #carousel-column   .carousel-control-next-icon {
+        background-size: 80%, 80%;
+        margin-left: 10vw;
+    }
+
+
+    #iconeZap {
+        display: none;
+    }
+    
+    /*Geral*/
+    #mainSlider .carousel-control-prev, #mainSlider .carousel-control-next{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: 40vh;
+    }
+    
+    .container-fluid{
+        width: 100%;
+    }
+
+    #text-about-area h2{
+        font-size: 20px;
+        
+    }
+
+    #text-about-area p{
+        font-size: 12px;
+        margin: 0;
+        width: 95%;
+        text-align: left;   
+    }
+    #mainSlider .carousel-caption h2{
+        font-size:3vw;
+      
+    }
+    .dinamico{
+        font-size:15px !important;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+     }
+
+     /*box*/
+     #titulo{
+        font-size: 30px;
+        padding: 0;
+        padding-top: 15px;
+        font-weight: 600;  
+       margin: 0;
+    }
+    
+    #texto{
+        font-size: 15px;
+    }
+
+    #posi-esquerda{
+        text-align: center;
+    }
+    
+
+    #posi-direita p, #posi-direita h5{
+        text-align: center;
+    }
+    #posi-direita p{
+        font-size: 11px !important;
+        line-height: 10px !important;
+    }
+
+
+   
+
+    .container h3{
+        margin: 35px 0;
+        font-size: 25px;
+    }
+    
+    .about-area-icons i{
+        font-size: 25px;
+    }
+    
+    #solucoes-icons h5{
+        font-size: 16px;
+    }
+
+    #solucoes-icons p{
+        font-size: 11px;
+    }
+
+   
+
+    #contato-email h6{
+        font-size: 15px;
+    }
+
+    #contato-email #email-cadastro, .campo-mensagem button{
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+    #contato-email #email{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #contato-email form{
+        text-align: center;
+        width: 100%;    
+        padding: 0 20vh;
+    }
+
+    #contatos-estilo a i{
+        font-size: 20px ;
+        
+    }
+
+    #contatos #contatos-estilo p{
+        font-size: 11px;
+    }
+
+    #contatos .about-area-icons span,.redeSociais span{
+        font-size: 11px;
+        margin:0;
+        padding: 0;
+    }
+
+    .redeSociais a i {
+        float: right;
+        padding: 2px 2px;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+        margin-right: 3px;
+        margin-top:15px;
+    }
+
+    .campo-mensagem input{
+        height: 30px;
+        width: 48%;
+        margin: 2px;
+        display: inline;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    
+    .campo-mensagem textarea{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        height: 120px;
+        max-height: 300px;
+        min-height: 120px;
+        font-size: 12px;
+    }
+
+    iframe{
+        height: 200px;
+        max-height: 200px;
+    }
+
+    
+}
+
+
+/*Celular*/
+
+
+@media (max-width:425px) {
+    #carousel-mobile .carousel-indicators{
+        margin-bottom: -3vh !important;
+    }
+    #carousel-column img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        width: 14vw;
+        height: 14vw;
+   
+    }
+    #carousel-column .carousel-control-prev-icon {
+        background-size: 50%, 50%;
+        margin-right: 9vw;
+
+    }
+       
+    #carousel-column   .carousel-control-next-icon {
+        background-size: 50%, 50%;
+        margin-left: 9vw;
+    }
+
+    #iconeZap{
+        display: none;
+    }
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: 30vh;
+    }
+    #mainSlider .carousel-control-prev, #mainSlider .carousel-control-next{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+    }
+     #mainSlider .carousel-caption h2{
+        font-size:3vw;
+        text-align: center !important;
+        margin-top: -5%;
+     }
+
+     .dinamico{
+        font-size:4vw !important;
+        width: 100%;
+        
+
+     }
+     .textSlider h2{
+        background-color: red;
+     }
+
+
+     #text-about-area h2{
+         font-size: 18px;
+         text-align: left;
+     }
+ 
+     #text-about-area p{
+         font-size: 15px;
+         margin: 0;
+         width: 95%;
+         text-align: left;   
+     }
+     
+     /*box*/
+     #box{
+        display: none;
+    }
+
+    #posi-esquerda{
+        text-align: center;
+    }
+    #posi-esquerda i{
+        font-size: 30px;
+
+    }
+
+
+    
+    #posi-direita p, #posi-direita h5{
+        text-align: center;
+    }
+    #posi-direita p{
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+
+     .container h3{
+         margin: 30px 0;
+         font-size: 22px;
+         padding: 0;
+     }
+ 
+     .about-area-icons i{
+         font-size: 25px;
+     }
+     
+     #solucoes-icons h5{
+         font-size: 20px;
+     }
+ 
+     #solucoes-icons p{
+         font-size: 15px;
+         margin-bottom: 5px;
+     }
+
+     #contato-email h6{
+         font-size: 15px;
+     }
+ 
+ 
+     #contato-email #email-cadastro, .campo-mensagem button{
+         padding: 5px 10px;
+         font-size: 10px;
+     }
+ 
+     #contato-email #email{
+         width: 90%;
+         font-size: 12px;
+     }
+ 
+     #contatos #contatos-estilo p{
+        font-size: 20px;
+     }
+     #contato-email form{
+         text-align: center;
+         width: 100%;    
+         padding: 10vh;
+     }
+ 
+     #contatos .about-area-icons span,.redeSociais span{
+         font-size: 5vw;
+         margin:0;
+         padding: 0;
+     }
+ 
+     
+     .redeSociais a i {
+         padding: 11px 11px;
+         border-radius: 50%; 
+         margin-right: 10px;
+         margin-top: -2px;
+     }
+ 
+     #contatos-estilo a {
+         margin-right: 10px;
+     }
+ 
+     #contatos-estilo i{
+         font-size: 30px;
+         margin-bottom: 35px;
+     }
+     #contatos-estilo a i{
+         font-size: 5vw;
+         margin-bottom: 20px;     
+     }
+ 
+     #social-btn{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+     }
+     #social-btn a{
+         margin:0;
+       
+     }
+     #social-btn a i{
+        margin:1px;
+ 
+      
+    }
+     .campo-mensagem input,.campo-mensagem textarea{
+         height: 40px;
+         width: 100%;
+         margin: 2px;
+         display: inline;
+         margin-bottom: 10px;
+         font-size: 15px;
+     }
+ 
+     #background-mensagem button{
+         padding: 10px 50px;
+     }
+   
+     iframe{
+         width: 100%;
+         height: 150px;
+         max-height: 150px;
+     }
+   
+}
+
+
+@media(max-width:360px ){
+    .dinamico{
+        font-size:15px !important;
+        width: 100%;
+     }  
+}
